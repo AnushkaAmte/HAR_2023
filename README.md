@@ -1,7 +1,7 @@
 # HAR: Human Activity Recognition
 This project envisions a system that can be used for two use cases: Fight
 Detection on Campus and Drowsy Driver Detection. The scope of our
-current project is limited to detecting small fights occurring in campus and
+current project is limited to detecting small fights occurring on campus and
 alerting the driver when they start to feel drowsy. We limit our current
 applications to a single camera usually remote, which needs to be connected
 to our application and inference models. We propose a website hosted on
@@ -11,13 +11,10 @@ a server to streamline this process.
 RCN (Long-term Recurrent Convolutional Networks) combines CNNs
 and RNNs to recognize human activities in videos. LRCN first extracts
 visual features from each frame of the input video using CNNs and then
-processes these features with an RNN, such as an LSTM or GRU, to cap-
-ture the temporal dynamics. The RNN component allows LRCN to model
-long-term dependencies between frames, which is crucial for activity recog-
-nition. By integrating CNNs and RNNs, LRCN can predict activity labels
-for each video segment and localize the temporal boundaries of the activ-
-ity. 
-![alt text](image.jpg)
+processes these features with an RNN, such as an LSTM or GRU, to capture the temporal dynamics. The RNN component allows LRCN to model
+long-term dependencies between frames, which is crucial for activity recognition. By integrating CNNs and RNNs, LRCN can predict activity labels
+for each video segment and localize the temporal boundaries of the activity. 
+![alt text](https://github.com/AnushkaAmte/HAR_2023/blob/master/lrcn.png?raw=true)
 # Requirements
 
 - Flask 2.2.3 and above
@@ -29,6 +26,6 @@ ity.
 
 # Demo:
 Drowsy Driver Detection
-![alt text](image.jpg)
+![alt text](https://github.com/AnushkaAmte/HAR_2023/blob/master/driver_infer.png?raw=true)
 Fight Detection
-![alt text](image.jpg)
+![alt text](https://github.com/AnushkaAmte/HAR_2023/blob/master/fight_infer.png?raw=true)
